@@ -1,0 +1,7 @@
+private/
+# The do-credentials.rb file should be copied from the template in
+# do-credentials.sample and adjusted to your needs.
+/do-credentials.rb
+/.vagrant
+
+
