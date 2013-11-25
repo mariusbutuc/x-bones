@@ -3,6 +3,7 @@ require './do-credentials.rb'
 Vagrant.configure('2') do |config|
 
   config.vm.provider :digital_ocean do |provider, config|
+    config.omnibus.chef_version = '11.6.0'
     config.ssh.private_key_path = DO_CREDENTIALS::PRIVATE_KEY_PATH
     config.ssh.username = DO_CREDENTIALS::USERNAME
     config.vm.box = 'digital_ocean'
