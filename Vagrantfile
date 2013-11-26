@@ -1,3 +1,5 @@
+Vagrant.require_plugin('vagrant-digitalocean')
+Vagrant.require_plugin('vagrant-omnibus')
 require './do-credentials.rb'
 
 Vagrant.configure('2') do |config|
